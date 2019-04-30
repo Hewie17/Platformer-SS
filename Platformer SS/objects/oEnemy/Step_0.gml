@@ -1,7 +1,7 @@
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
 /// @DnDHash : 3593216F
-/// @DnDArgument : "code" "vsp = vsp + grv;$(13_10)$(13_10)if (place_meeting(x+hsp,y,oWall))$(13_10){$(13_10)	while (!place_meeting(x+sign(hsp),y,oWall))$(13_10)	{$(13_10)		x = x + sign(hsp);$(13_10)	}$(13_10)	hsp = 0;$(13_10)}$(13_10)$(13_10)x = x + hsp;$(13_10)$(13_10)$(13_10)if (place_meeting(x,y+vsp,oWall))$(13_10){$(13_10)	while (!place_meeting(x,y+sign(vsp),oWall))$(13_10)	{$(13_10)		y = y + sign(vsp);$(13_10)	}$(13_10)	vsp = -0;$(13_10)}$(13_10)$(13_10)$(13_10)y = y + vsp;$(13_10)//Animation$(13_10)if (!place_meeting(x,y+1,oWall))$(13_10){$(13_10)	sprite_index = sEnemyA;$(13_10)	image_speed = 0;$(13_10)	if (sign(vsp) > 0) image_index = 1; $(13_10)	else image_index = 0;$(13_10)	$(13_10)}$(13_10)else$(13_10){$(13_10)	image_speed = 1;$(13_10)	if (hsp == 0)$(13_10)	{$(13_10)		sprite_index = sEnemy;$(13_10)	}$(13_10)	else$(13_10)	{$(13_10)		sprite_index = sEnemyR;	$(13_10)	}$(13_10)}$(13_10)if (hsp !=0) image_xscale = sign(hsp);$(13_10)$(13_10)$(13_10)$(13_10)$(13_10)$(13_10)"
+/// @DnDArgument : "code" "vsp = vsp + grv;$(13_10)$(13_10)if (place_meeting(x+hsp,y,oWall))$(13_10){$(13_10)	while (!place_meeting(x+sign(hsp),y,oWall))$(13_10)	{$(13_10)		x = x + sign(hsp);$(13_10)	}$(13_10)	hsp = -hsp;$(13_10)}$(13_10)$(13_10)x = x + hsp;$(13_10)$(13_10)$(13_10)if (place_meeting(x,y+vsp,oWall))$(13_10){$(13_10)	while (!place_meeting(x,y+sign(vsp),oWall))$(13_10)	{$(13_10)		y = y + sign(vsp);$(13_10)	}$(13_10)	vsp = -0;$(13_10)}$(13_10)$(13_10)$(13_10)y = y + vsp;$(13_10)//Animation$(13_10)if (!place_meeting(x,y+1,oWall))$(13_10){$(13_10)	sprite_index = sEnemyA;$(13_10)	image_speed = 0;$(13_10)	if (sign(vsp) > 0) image_index = 1; $(13_10)	else image_index = 0;$(13_10)	$(13_10)}$(13_10)else$(13_10){$(13_10)	image_speed = 1;$(13_10)	if (hsp == 0)$(13_10)	{$(13_10)		sprite_index = sEnemy;$(13_10)	}$(13_10)	else$(13_10)	{$(13_10)		sprite_index = sEnemyR;	$(13_10)	}$(13_10)}$(13_10)if (hsp !=0) image_xscale = sign(hsp);$(13_10)$(13_10)$(13_10)$(13_10)$(13_10)$(13_10)"
 vsp = vsp + grv;
 
 if (place_meeting(x+hsp,y,oWall))
@@ -10,7 +10,7 @@ if (place_meeting(x+hsp,y,oWall))
 	{
 		x = x + sign(hsp);
 	}
-	hsp = 0;
+	hsp = -hsp;
 }
 
 x = x + hsp;
