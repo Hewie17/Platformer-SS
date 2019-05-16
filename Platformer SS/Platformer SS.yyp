@@ -87,6 +87,14 @@
             }
         },
         {
+            "Key": "378609b3-ca52-474a-8c16-c7fa88f551b7",
+            "Value": {
+                "id": "d287cb6d-273a-432c-a3ba-99b501b8ec95",
+                "resourcePath": "objects\\oLevelEnd\\oLevelEnd.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "39b22f18-618f-4186-8272-8ba4a9fefd81",
             "Value": {
                 "id": "bd71fc4d-a96f-4052-8d1a-38eef8693894",
@@ -108,6 +116,14 @@
                 "id": "e8016f88-1a76-4673-b0c0-0e90aeb2da12",
                 "resourcePath": "sprites\\sPlayerAir\\sPlayerAir.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "48b1452d-806b-4132-9289-fbab5d76821e",
+            "Value": {
+                "id": "54c4faea-d152-4ef7-87c4-1045679b893f",
+                "resourcePath": "rooms\\Room2\\Room2.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -164,6 +180,14 @@
                 "id": "8f85d9cb-86b8-4374-992e-10a64dd3eaed",
                 "resourcePath": "views\\72571d37-1a38-4b0d-b105-f6dd15b1799e.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "72c59701-b44e-48e1-9149-f8fb99fd78d5",
+            "Value": {
+                "id": "132d9752-fb88-497a-9ba9-9bde15cc6627",
+                "resourcePath": "sprites\\sTrigger\\sTrigger.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -303,6 +327,14 @@
             }
         },
         {
+            "Key": "eb5f2d9e-fdbf-46f8-8a1a-51b5e7f3e155",
+            "Value": {
+                "id": "f8f27417-728a-4a1f-abb4-f0931fad6cd3",
+                "resourcePath": "scripts\\SlideTransition\\SlideTransition.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f3cd0e26-72b8-4174-87c1-c0510dc3b2b5",
             "Value": {
                 "id": "02c377bb-e826-4c56-99b4-b0f0dbada9b7",
@@ -319,6 +351,14 @@
             }
         },
         {
+            "Key": "f78d22b2-a660-40f9-8730-9816f384a542",
+            "Value": {
+                "id": "febf9162-54c3-4ac4-8bc9-362eda437c8b",
+                "resourcePath": "objects\\oTransition\\oTransition.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "ff6bf949-6a56-4f45-88eb-0a92520f03cc",
             "Value": {
                 "id": "7ad2df15-b35a-4e6b-be69-f7d31400c50d",
@@ -328,7 +368,7 @@
         }
     ],
     "script_order": [
-        
+        "eb5f2d9e-fdbf-46f8-8a1a-51b5e7f3e155"
     ],
     "tutorial": ""
 }
